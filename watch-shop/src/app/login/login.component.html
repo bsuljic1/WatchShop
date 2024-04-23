@@ -1,0 +1,119 @@
+<div class="card">
+  <div class="login-box">
+    <div class="login-snip">
+      <input
+        id="tab-1"
+        type="radio"
+        name="tab"
+        class="sign-in"
+        [checked]="login == true"
+      />
+      <label for="tab-1" class="tab">Sign in</label>
+      <input
+        id="tab-2"
+        type="radio"
+        name="tab"
+        class="sign-up"
+        [checked]="login == false"
+      />
+      <label for="tab-2" class="tab">Register</label>
+      <div class="login-space">
+        <div class="login">
+          <div class="group">
+            <label for="emailLogin" class="label">Email</label>
+            <input
+              [(ngModel)]="emailLogin"
+              id="emailLogin"
+              type="text"
+              class="input"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="group">
+            <label for="passwordLogin" class="label">Password</label>
+            <input
+              [(ngModel)]="passwordLogin"
+              id="passwordLogin"
+              type="password"
+              class="input"
+              data-type="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="group">
+            <input
+              type="submit"
+              class="button"
+              value="Sign In"
+              (click)="signIn()"
+            />
+          </div>
+          <div class="hr"></div>
+        </div>
+        <div class="sign-up-form">
+          <div class="group">
+            <label for="name" class="label">Name</label>
+            <input
+              [(ngModel)]="name"
+              id="name"
+              type="text"
+              class="input"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="group">
+            <label for="email" class="label">Email Address</label>
+            <input
+              [(ngModel)]="email"
+              id="email"
+              type="text"
+              class="input"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <div class="group">
+            <label for="password" class="label">Password</label>
+            <input
+              [(ngModel)]="password"
+              id="password"
+              type="password"
+              class="input"
+              data-type="password"
+              placeholder="Create your password"
+            />
+            <div class="group">
+              <label for="phone" class="label">Phone</label>
+              <input
+                [(ngModel)]="phone"
+                id="phone"
+                type="text"
+                class="input"
+                placeholder="Enter your phone"
+              />
+              <div class="group">
+                <label for="address" class="label">Address</label>
+                <input
+                  [(ngModel)]="address"
+                  id="address"
+                  type="text"
+                  class="input"
+                  placeholder="Enter your address"
+                />
+              </div>
+
+              <div class="group">
+                <input
+                  type="submit"
+                  class="button"
+                  value="Sign Up"
+                  (click)="register()"
+                />
+              </div>
+              <div class="hr"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

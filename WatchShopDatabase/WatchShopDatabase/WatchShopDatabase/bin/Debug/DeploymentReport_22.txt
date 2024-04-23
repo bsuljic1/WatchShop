@@ -1,0 +1,35 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Watch]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Watch] (Default Constraint)
+     Table rebuild
+       [dbo].[Watch] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[Fk_Watch_Cart_WatchId] (Foreign Key)
+       [dbo].[Fk_Watch_Purchase_WatchId] (Foreign Key)
+       [dbo].[Fk_Watch_StyleWatch_WatchId] (Foreign Key)
+       [dbo].[Fk_Condition_Watch_ConditionId] (Foreign Key)
+       [dbo].[Fk_Brand_Watch_BrandId] (Foreign Key)
+       [dbo].[Fk_Gender_Watch_GenderId] (Foreign Key)
+       [dbo].[Fk_Color_Watch_ColorId] (Foreign Key)
+       [dbo].[Fk_Watch_WishList_WatchId] (Foreign Key)
+     Create
+       [dbo].[Fk_Watch_Cart_WatchId] (Foreign Key)
+       [dbo].[Fk_Watch_Purchase_WatchId] (Foreign Key)
+       [dbo].[Fk_Watch_StyleWatch_WatchId] (Foreign Key)
+       [dbo].[Fk_Condition_Watch_ConditionId] (Foreign Key)
+       [dbo].[Fk_Brand_Watch_BrandId] (Foreign Key)
+       [dbo].[Fk_Gender_Watch_GenderId] (Foreign Key)
+       [dbo].[Fk_Color_Watch_ColorId] (Foreign Key)
+       [dbo].[Fk_Watch_WishList_WatchId] (Foreign Key)

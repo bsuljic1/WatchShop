@@ -1,0 +1,49 @@
+<div class="card">
+  <div class="row">
+    <div class="col-md-12 cart">
+      <div class="title">
+        <div class="row">
+          <div class="col">
+            <h4><b>Purchase history</b></h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 title"><h6>Product details</h6></div>
+        <div class="col-md-2 title"><h6>Quantity</h6></div>
+        <div class="col-md-2 title"><h6>Price</h6></div>
+        <div class="col-md-3 title"><h6>Date</h6></div>
+      </div>
+      <div
+        *ngFor="
+          let watch of watches
+            | paginate
+              : {
+                  itemsPerPage: 6,
+                  currentPage: page,
+                  totalItems: totalSize
+                }
+        "
+      >
+        <div class="row main align-items-center">
+          <div class="col-md-2 title">
+            <img class="img-fluid" src="{{ watch.imagePath }}" />
+          </div>
+          <div class="col-md-3">
+            <div class="row text-muted title">{{ watch.brand.brandName }}</div>
+            <div class="row">{{ watch.model }}</div>
+          </div>
+          <div class="col-md-2 title">
+            {{ watch["quantity"] }}
+          </div>
+          <div class="col-md-2 title">
+            $ {{ watch.price * watch["quantity"] }}
+          </div>
+          <div class="col-md-3 title">{{ watch["date"] | date }}</div>
+        </div>
+        <hr />
+      </div>
+      <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    </div>
+  </div>
+</div>

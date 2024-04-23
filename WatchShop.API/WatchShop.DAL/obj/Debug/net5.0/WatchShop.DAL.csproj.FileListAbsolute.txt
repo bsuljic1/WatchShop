@@ -1,0 +1,17 @@
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\bin\Debug\net5.0\WatchShop.DAL.deps.json
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\bin\Debug\net5.0\WatchShop.DAL.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\bin\Debug\net5.0\ref\WatchShop.DAL.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\bin\Debug\net5.0\WatchShop.DAL.pdb
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\bin\Debug\net5.0\WatchShop.Contracts.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\bin\Debug\net5.0\WatchShop.Model.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\bin\Debug\net5.0\WatchShop.Model.pdb
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\bin\Debug\net5.0\WatchShop.Contracts.pdb
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\obj\Debug\net5.0\WatchShop.DAL.csproj.AssemblyReference.cache
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\obj\Debug\net5.0\WatchShop.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\obj\Debug\net5.0\WatchShop.DAL.AssemblyInfoInputs.cache
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\obj\Debug\net5.0\WatchShop.DAL.AssemblyInfo.cs
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\obj\Debug\net5.0\WatchShop.DAL.csproj.CoreCompileInputs.cache
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\obj\Debug\net5.0\WatchShop.DAL.csproj.CopyComplete
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\obj\Debug\net5.0\WatchShop.DAL.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\obj\Debug\net5.0\ref\WatchShop.DAL.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.DAL\obj\Debug\net5.0\WatchShop.DAL.pdb

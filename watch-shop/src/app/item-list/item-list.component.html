@@ -1,0 +1,106 @@
+<div class="wrap">
+  <div class="row">
+    <div class="col-md-3">
+      <app-filter-list (filterContract)="getWatches($event)"></app-filter-list>
+    </div>
+    <div class="col-md-9 items">
+      <div clas="row">
+        <div class="search-box col-md-10">
+          <form [formGroup]="searchForm">
+            <div class="input-group">
+              <div class="has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input
+                  formControlName="search"
+                  type="search"
+                  class="form-control search"
+                  placeholder="Search for watch"
+                />
+              </div>
+              <div class="input-group-append ml-2">
+                <button
+                  class="btn btn-success"
+                  style="background-color: rgb(218, 166, 37)"
+                  type="button"
+                  (click)="doSearch()"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="sortby col-md-2">
+          <div
+            ngbDropdown
+            display="dynamic"
+            class="input-group-append sortby"
+            autoClose="outside"
+          >
+            <button
+              ngbDropdownToggle
+              id="dropdown-search"
+              class="btn dropdown-toggle sortby"
+              type="button"
+              data-toggle="dropdown"
+            >
+              Sort by
+            </button>
+            <div ngbDropdownMenu class="dropdown-menu">
+              <button
+                ngbDropdownItem
+                class="btn"
+                type="button"
+                (click)="sortBy('nameAsc')"
+              >
+                Name Ascending
+              </button>
+              <button
+                ngbDropdownItem
+                class="btn"
+                type="button"
+                (click)="sortBy('nameDesc')"
+              >
+                Name Descending
+              </button>
+              <button
+                ngbDropdownItem
+                class="btn"
+                type="button"
+                (click)="sortBy('priceAsc')"
+              >
+                Price Ascending
+              </button>
+              <button
+                ngbDropdownItem
+                class="btn"
+                type="button"
+                (click)="sortBy('priceDesc')"
+              >
+                Price Descending
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <app-item-card
+            *ngFor="
+              let w of watches
+                | paginate
+                  : {
+                      itemsPerPage: 8,
+                      currentPage: page,
+                      totalItems: totalSize
+                    }
+            "
+            [watch]="w"
+          >
+          </app-item-card>
+          <pagination-controls
+            (pageChange)="page = $event"
+          ></pagination-controls>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

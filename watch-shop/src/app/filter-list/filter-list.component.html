@@ -1,0 +1,198 @@
+<div class="card">
+  <div class="buttons">
+    <button class="btn btn-light" type="button" (click)="resetFilter()">
+      Reset
+    </button>
+    <button class="btn btn-dark" type="button" (click)="applyFilter()">
+      Apply
+    </button>
+  </div>
+
+  <article class="card-group-item">
+    <header class="card-header" (click)="genderSetView()">
+      <h6 class="title">
+        Gender
+        <i class="fas fa-chevron-down" *ngIf="!genderView"></i>
+        <i class="fas fa-chevron-up" *ngIf="genderView"></i>
+      </h6>
+    </header>
+    <div class="filter-content" *ngIf="genderView">
+      <div class="card-body">
+        <form>
+          <div
+            [formGroup]="genderForm"
+            class="form-check"
+            *ngFor="let g of genders"
+          >
+            <input
+              formControlName="gender"
+              class="form-check-input"
+              type="radio"
+              value="{{ g.genderName }}"
+              name="gender"
+              ngModel
+            />
+            <label class="form-check-label" for="gender">
+              {{ g.genderName }}
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </article>
+
+  <article class="card-group-item">
+    <header class="card-header" (click)="brandSetView()">
+      <h6 class="title">
+        Brand
+        <i class="fas fa-chevron-down" *ngIf="!brandView"></i>
+        <i class="fas fa-chevron-up" *ngIf="brandView"></i>
+      </h6>
+    </header>
+    <div class="filter-content" *ngIf="brandView">
+      <div class="card-body">
+        <form>
+          <div
+            [formGroup]="brandForm"
+            class="form-check"
+            *ngFor="let b of brands"
+          >
+            <input
+              formControlName="brand"
+              class="form-check-input"
+              type="radio"
+              value="{{ b.brandName }}"
+              name="brand"
+              ngModel
+            />
+            <label class="form-check-label" for="brand">
+              {{ b.brandName }}
+            </label>
+          </div>
+        </form>
+      </div>
+      <!-- card-body.// -->
+    </div>
+  </article>
+  <!-- card-group-item.// -->
+
+  <article class="card-group-item">
+    <header class="card-header" (click)="conditionSetView()">
+      <h6 class="title">
+        Condition
+        <i class="fas fa-chevron-down" *ngIf="!conditionView"></i>
+        <i class="fas fa-chevron-up" *ngIf="conditionView"></i>
+      </h6>
+    </header>
+    <div class="filter-content" *ngIf="conditionView">
+      <div class="card-body">
+        <form>
+          <div
+            [formGroup]="conditionForm"
+            class="form-check"
+            *ngFor="let c of conditions"
+          >
+            <input
+              formControlName="condition"
+              class="form-check-input"
+              type="radio"
+              value="{{ c.conditionName }}"
+              name="condition"
+              ngModel
+            />
+            <label class="form-check-label" for="condition">
+              {{ c.conditionName }}
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </article>
+
+  <!-- <article class="card-group-item">
+        <header class="card-header" (click)="styleSetView()">
+            <h6 class="title">Style 
+                <i class="fas fa-chevron-down" *ngIf="!styleView"></i>
+                <i class="fas fa-chevron-up" *ngIf="styleView"></i>
+            </h6>
+        </header>
+        <div class="filter-content" *ngIf="styleView">
+            <div class="card-body">
+                <form>
+                    <div [formGroup]="styleForm" class="form-check" *ngFor="let s of styles">
+                        <input formControlName="style" class="form-check-input" type="radio" value="{{s.styleName}}" name="style" ngModel>
+                        <label class="form-check-label" for="gender">
+                            {{ s.styleName }}
+                        </label>
+                    </div>
+                </form>   
+    
+             </div>    
+         </div>        
+    </article>  -->
+
+  <article class="card-group-item">
+    <header class="card-header" (click)="colorSetView()">
+      <h6 class="title">
+        Color
+        <i class="fas fa-chevron-down" *ngIf="!colorView"></i>
+        <i class="fas fa-chevron-up" *ngIf="colorView"></i>
+      </h6>
+    </header>
+    <div class="filter-content" *ngIf="colorView">
+      <div class="card-body">
+        <form class="form-group" [formGroup]="colorForm">
+          <div class="form-check" *ngFor="let c of colors">
+            <input
+              formControlName="color"
+              class="form-check-input"
+              type="radio"
+              value="{{ c.colorName }}"
+              name="color"
+              ngModel
+            />
+            <label class="form-check-label" for="color">
+              {{ c.colorName }}
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </article>
+
+  <article class="card-group-item">
+    <header class="card-header">
+      <h6 class="title">Price</h6>
+    </header>
+    <div class="filter-content">
+      <div class="card-body">
+        <div class="form-row">
+          <div [formGroup]="minPriceForm" class="form-group col-md-6">
+            <label>From:</label>
+            <input
+              formControlName="minPriceControl"
+              type="number"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="$0"
+            />
+          </div>
+          <div
+            [formGroup]="maxPriceForm"
+            class="form-group col-md-6 text-right"
+          >
+            <label>To:</label>
+            <input
+              formControlName="maxPriceControl"
+              type="number"
+              class="form-control"
+              placeholder="$100,000"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- card-body.// -->
+    </div>
+  </article>
+  <!-- card-group-item.// -->
+</div>

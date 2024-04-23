@@ -1,0 +1,10 @@
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\bin\Debug\WatchShopDatabase.dacpac
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\bin\Debug\WatchShopDatabase.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\bin\Debug\WatchShopDatabase.pdb
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\obj\Debug\WatchShopDatabase.sqlproj.AssemblyReference.cache
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\obj\Debug\WatchShopDatabase.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\obj\Debug\WatchShopDatabase.pdb
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\obj\Debug\Model.xml
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\obj\Debug\refactor.xml
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\obj\Debug\postdeploy.sql
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\obj\Debug\predeploy.sql

@@ -1,0 +1,80 @@
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+/>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" routerLink="" style="color: goldenrod">WatchShop</a>
+
+  <nav class="nav-menu">
+    <ul *ngIf="currentUser && currentUser.role.roleName == 'Costumer'">
+      <li class="active" id="home"><a routerLink="">Home</a></li>
+      <li>
+        <a routerLink="/products">Shop</a>
+      </li>
+      <li>
+        <a routerLink="/purchase/history">Purchase history</a>
+      </li>
+      <li>
+        <a routerLink="/wishList">Wishlist</a>
+      </li>
+    </ul>
+    <ul *ngIf="currentUser == null">
+      <li class="active" id="home"><a routerLink="">Home</a></li>
+      <li>
+        <a routerLink="/products">Shop</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="top_bar_user">
+    <a
+      *ngIf="currentUser && currentUser.role.roleName == 'Costumer'"
+      class="cart"
+      routerLink="/cart"
+    >
+      <i class="fas fa-shopping-cart"></i>
+      <span
+        class="cart-basket d-flex align-items-center justify-content-center"
+      >
+        0
+      </span>
+    </a>
+    <div
+      ngbDropdown
+      placement="bottom-right"
+      class="dropdown user"
+      autoClose="outside"
+    >
+      <a ngbDropdownToggle class="dropdown-toggle" role="button">
+        <i class="fas fa-user"></i>
+        <span class="caret"></span>
+      </a>
+      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right">
+        <a
+          *ngIf="currentUser"
+          ngbDropdownItem
+          class="dropdown-item"
+          (click)="logout()"
+          >Sign out</a
+        >
+        <a
+          *ngIf="currentUser == null"
+          ngbDropdownItem
+          class="dropdown-item"
+          routerLink="/register"
+          >Register</a
+        >
+        <a
+          *ngIf="currentUser == null"
+          ngbDropdownItem
+          class="dropdown-item"
+          routerLink="/login"
+          >Sign in</a
+        >
+      </div>
+    </div>
+  </div>
+  <div *ngIf="currentUser" class="userName">
+    <h6>{{ currentUser.userFirstName }} {{ currentUser.userLastName }}</h6>
+  </div>
+</nav>

@@ -1,0 +1,46 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Brand] (Table)
+       [dbo].[Cart] (Table)
+       [dbo].[Color] (Table)
+       [dbo].[Condition] (Table)
+       [dbo].[Gender] (Table)
+       [dbo].[Privilege] (Table)
+       [dbo].[Purchase] (Table)
+       [dbo].[Role] (Table)
+       [dbo].[RolePrivilege] (Table)
+       [dbo].[ScriptHistory] (Table)
+       [dbo].[Style] (Table)
+       [dbo].[StyleWatch] (Table)
+       [dbo].[User] (Table)
+       [dbo].[UserRole] (Table)
+       [dbo].[Watch] (Table)
+       [dbo].[WishList] (Table)
+       [dbo].[Fk_Watch_Cart_WatchId] (Foreign Key)
+       [dbo].[Fk_User_Cart_UserId] (Foreign Key)
+       [dbo].[Fk_Watch_Purchase_WatchId] (Foreign Key)
+       [dbo].[Fk_User_Purchase_UserId] (Foreign Key)
+       [dbo].[Fk_Role_RolePrivilege_RoleId] (Foreign Key)
+       [dbo].[Fk_Privilege_RolePrivilege_PrivilegeId] (Foreign Key)
+       [dbo].[Fk_Watch_StyleWatch_WatchId] (Foreign Key)
+       [dbo].[Fk_Style_StyleWatch_StyleId] (Foreign Key)
+       [dbo].[Fk_User_UserRole_UserId] (Foreign Key)
+       [dbo].[Fk_Role_UserRole_RoleId] (Foreign Key)
+       [dbo].[Fk_Condition_Watch_ConditionId] (Foreign Key)
+       [dbo].[Fk_Brand_Watch_BrandId] (Foreign Key)
+       [dbo].[Fk_Gender_Watch_GenderId] (Foreign Key)
+       [dbo].[Fk_Color_Watch_ColorId] (Foreign Key)
+       [dbo].[Fk_Watch_WishList_WatchId] (Foreign Key)
+       [dbo].[Fk_User_WishList_UserId] (Foreign Key)
+
+** Supporting actions

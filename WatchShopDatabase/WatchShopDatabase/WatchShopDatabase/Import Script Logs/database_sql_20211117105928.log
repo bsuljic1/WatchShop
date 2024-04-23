@@ -1,0 +1,12 @@
+11/17/2021 11:59:28 AM	This log contains information about the import operation of the script 'database.sql' into project 'WatchShopDatabase' on computer 'API2464' by user'berina.suljic.
+11/17/2021 11:59:28 AM	Started importing file: C:\Users\berina.suljic\OneDrive - Authority Partners Inc\Documents\database.sql 
+11/17/2021 11:59:28 AM	File name C:\Users\berina.suljic\OneDrive - Authority Partners Inc\Documents\database.sql (size: 7984)
+11/17/2021 11:59:28 AM	Parsing import script
+11/17/2021 11:59:28 AM	Total number of batches in script: 1
+11/17/2021 11:59:28 AM	Total number of statements in script: 31
+11/17/2021 11:59:28 AM	The script was successfully imported into the project.
+11/17/2021 11:59:29 AM	Analyzing schema objects...
+11/17/2021 11:59:29 AM	Scanning project for duplicate elements
+11/17/2021 11:59:29 AM	Finished duplicate element processing
+11/17/2021 11:59:29 AM	A summary of the import was saved to the following location: C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShopDatabase\WatchShopDatabase\WatchShopDatabase\Import Script Logs\database_sql_20211117105928.log
+11/17/2021 11:59:29 AM	Click Finish to continue...

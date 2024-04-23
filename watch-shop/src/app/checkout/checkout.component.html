@@ -1,0 +1,70 @@
+<div class="card">
+  <div class="row">
+    <div class="col-md-8 cart">
+      <div class="title">
+        <div class="row">
+          <div class="col">
+            <h4><b>Checkout</b></h4>
+          </div>
+          <div class="col align-self-center text-right text-muted">
+            {{ totalLength }} items
+          </div>
+        </div>
+      </div>
+      <div
+        class="row border-top"
+        *ngFor="
+          let watch of watches
+            | paginate
+              : {
+                  itemsPerPage: 4,
+                  currentPage: page,
+                  totalItems: totalLength
+                }
+        "
+      >
+        <div class="row main align-items-center">
+          <div class="col-2">
+            <img class="img-fluid" src="{{ watch.imagePath }}" />
+          </div>
+          <div class="col">
+            <div class="row text-muted">{{ watch.brand.brandName }}</div>
+            <div class="row">{{ watch.model }}</div>
+          </div>
+          <div class="col">
+            {{ watch["quantity"] }}
+          </div>
+          <div class="col">$ {{ watch.price * watch["quantity"] }}</div>
+        </div>
+      </div>
+      <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    </div>
+    <div class="col-md-4 summary">
+      <div>
+        <h5><b>Summary</b></h5>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col" style="padding-left: 0">ITEMS {{ totalLength }}</div>
+        <div class="col text-right">$ {{ totalPrice - 5 }}</div>
+      </div>
+      <div class="row">
+        <div class="col" style="padding-left: 0">SHIPPING</div>
+        <div class="col text-right">$ 5</div>
+      </div>
+      <div
+        class="row"
+        style="border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 2vh 0"
+      >
+        <div class="col">TOTAL PRICE</div>
+        <div class="col text-right">$ {{ totalPrice }}</div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-danger">Cancel</button>
+        <button class="btn btn-lg btn-success" (click)="checkout()">
+          SUBMIT
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

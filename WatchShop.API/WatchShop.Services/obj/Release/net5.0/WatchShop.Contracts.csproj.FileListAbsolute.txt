@@ -1,0 +1,15 @@
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Release\net5.0\WatchShop.Contracts.deps.json
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Release\net5.0\WatchShop.Contracts.runtimeconfig.json
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Release\net5.0\WatchShop.Contracts.runtimeconfig.dev.json
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Release\net5.0\WatchShop.Contracts.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Release\net5.0\ref\WatchShop.Contracts.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Release\net5.0\WatchShop.Contracts.pdb
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Release\net5.0\WatchShop.Contracts.csproj.AssemblyReference.cache
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Release\net5.0\WatchShop.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Release\net5.0\WatchShop.Contracts.AssemblyInfoInputs.cache
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Release\net5.0\WatchShop.Contracts.AssemblyInfo.cs
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Release\net5.0\WatchShop.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Release\net5.0\WatchShop.Contracts.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Release\net5.0\ref\WatchShop.Contracts.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Release\net5.0\WatchShop.Contracts.pdb
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Release\net5.0\WatchShop.Contracts.genruntimeconfig.cache

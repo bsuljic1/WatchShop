@@ -1,0 +1,292 @@
+<div class="addForm">
+  <form class="needs-validation" needs-validation>
+    <div class="col-md-6 first">
+      <div class="form-group row sel">
+        <label for="brand" class="col-md-4 col-form-label">Brand</label>
+        <select
+          [(ngModel)]="brand"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-select col-md-6"
+          value="watch.brand.brandName"
+          name="brand"
+        >
+          <option>Choose brand</option>
+          <option *ngFor="let b of brands">{{ b.brandName }}</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label for="model" class="col-md-4 col-form-label">Model</label>
+        <div class="col-md-6">
+          <input
+            [(ngModel)]="model"
+            [ngModelOptions]="{ standalone: true }"
+            type="text"
+            class="form-control"
+            value="watch.model"
+            name="model"
+            placeholder="Model"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="braceletMaterial" class="col-md-4 col-form-label"
+          >Bracelet Material</label
+        >
+        <div class="col-md-6">
+          <input
+            [(ngModel)]="braceletMaterial"
+            [ngModelOptions]="{ standalone: true }"
+            type="text"
+            class="form-control"
+            name="braceletMaterial"
+            value="watch.braceletMaterial"
+            placeholder="Bracelet Material"
+            required
+          />
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row radios">
+          <legend class="col-form-label col-md-4 pt-0">Gender</legend>
+          <div class="row col-md-6">
+            <div class="form-check">
+              <input
+                [value]="genderMan == true"
+                [(ngModel)]="genderMan"
+                [ngModelOptions]="{ standalone: true }"
+                class="form-check-input"
+                type="radio"
+                id="genderMan"
+                name="genderMan"
+              />
+              <label class="form-check-label" for="genderMan"> Man </label>
+            </div>
+            <div class="form-check">
+              <input
+                [value]="genderWoman == true"
+                [(ngModel)]="genderWoman"
+                [ngModelOptions]="{ standalone: true }"
+                class="form-check-input"
+                type="radio"
+                id="genderWoman"
+                name="genderWoman"
+              />
+              <label class="form-check-label" for="genderWoman"> Woman </label>
+            </div>
+            <div class="form-check disabled">
+              <input
+                [value]="genderUnisex == true"
+                [(ngModel)]="genderUnisex"
+                [ngModelOptions]="{ standalone: true }"
+                class="form-check-input"
+                type="radio"
+                id="genderUnisex"
+                name="genderUnisex"
+              />
+              <label class="form-check-label" for="genderUnisex">
+                Unisex
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row sel">
+        <label for="color" class="col-md-4 col-form-label">Color</label>
+        <select
+          [(ngModel)]="color"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-select col-md-6"
+          name="color"
+          [value]="watch.color.colorName"
+        >
+          <option>Choose color</option>
+          <option *ngFor="let c of colors">{{ c.colorName }}</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label for="imagePath" class="col-md-4 col-form-label"
+          >Image path</label
+        >
+        <div class="col-md-6">
+          <input
+            [(ngModel)]="imagePath"
+            [ngModelOptions]="{ standalone: true }"
+            type="text"
+            class="form-control"
+            name="imagePath"
+            placeholder="URL"
+            [value]="watch.imagePath"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="caseDiameter" class="col-md-4 col-form-label"
+          >Case Diameter</label
+        >
+        <div class="col-md-6">
+          <input
+            [(ngModel)]="caseDiameter"
+            [ngModelOptions]="{ standalone: true }"
+            min="1"
+            type="number"
+            class="form-control"
+            name="caseDiameter"
+            [value]="watch.caseDiameter"
+            placeholder="mm"
+            required
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 second">
+      <div class="form-group row">
+        <label for="waterResistant" class="col-md-4 col-form-label"
+          >Water Resistant</label
+        >
+        <div class="col-md-6">
+          <input
+            [(ngModel)]="waterResistant"
+            [ngModelOptions]="{ standalone: true }"
+            min="1"
+            type="number"
+            class="form-control"
+            name="waterResistant"
+            placeholder="ATM"
+            [value]="watch.waterResistant"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="datePublished" class="col-md-4 col-form-label"
+          >Date published</label
+        >
+        <div class="col-md-6">
+          <input
+            [(ngModel)]="datePublished"
+            [ngModelOptions]="{ standalone: true }"
+            type="date"
+            class="form-control"
+            name="datePublished"
+            placeholder="Date published"
+            [value]="watch.datePublished"
+            required
+          />
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-md-4 pt-0">Condition</legend>
+          <div class="row radios col-md-6">
+            <div class="form-check">
+              <input
+                [(ngModel)]="conditionNew"
+                [ngModelOptions]="{ standalone: true }"
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="conditionNew"
+                [value]="conditionNew"
+              />
+              <label class="form-check-label" for="conditionNew"> New </label>
+            </div>
+            <div class="form-check">
+              <input
+                [(ngModel)]="conditionUsed"
+                [ngModelOptions]="{ standalone: true }"
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="conditionUsed"
+                [value]="conditionUsed"
+              />
+              <label class="form-check-label" for="conditionUsed"> Used </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <label for="price" class="col-md-4 col-form-label">Price</label>
+        <div class="col-md-6">
+          <input
+            [(ngModel)]="price"
+            [ngModelOptions]="{ standalone: true }"
+            min="0"
+            type="number"
+            class="form-control"
+            name="price"
+            [value]="watch.price"
+            placeholder="Input price in $"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="shippingPrice" class="col-md-4 col-form-label"
+          >Shipping Price</label
+        >
+        <div class="col-md-6">
+          <input
+            [(ngModel)]="shippingPrice"
+            [ngModelOptions]="{ standalone: true }"
+            min="0"
+            type="number"
+            class="form-control"
+            name="shippingprice"
+            [value]="watch.shippingPrice"
+            placeholder="Input shipping price in $"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="guarantee" class="col-md-4 col-form-label">Guarantee</label>
+        <div class="col-md-6">
+          <input
+            [(ngModel)]="guarantee"
+            [ngModelOptions]="{ standalone: true }"
+            min="0"
+            type="number"
+            class="form-control"
+            name="guarantee"
+            [value]="watch.guarantee"
+            placeholder="Input guarantee in months"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="available" class="col-md-4 col-form-label">Available</label>
+        <div class="col-md-6">
+          <input
+            [(ngModel)]="available"
+            [ngModelOptions]="{ standalone: true }"
+            min="0"
+            type="number"
+            class="form-control"
+            name="available"
+            [value]="watch.available"
+            placeholder="Available"
+            required
+          />
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-md-11 formButtons">
+        <button
+          type="cancel"
+          class="btn btn-secondary cancel"
+          (click)="cancel()"
+        >
+          Cancel
+        </button>
+        <button type="submit" (click)="editWatch()" class="btn btn-success">
+          Save changes
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

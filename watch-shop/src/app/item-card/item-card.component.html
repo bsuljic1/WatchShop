@@ -1,0 +1,45 @@
+<div class="product-grid">
+  <div class="product-image">
+    <a class="image" [routerLink]="['productDetails', watch.watchId]">
+      <img src="{{ watch.imagePath }}" />
+    </a>
+    <ul class="social" *ngIf="currentUser">
+      <li>
+        <a
+          type="button"
+          placement="left"
+          (click)="addToWishList()"
+          ngbTooltip="Add to wishlist"
+        >
+          <i class="fa fa-heart"></i>
+        </a>
+      </li>
+      <li>
+        <a
+          type="button"
+          placement="left"
+          ngbTooltip="Add to cart"
+          (click)="addToCart(watch)"
+        >
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </li>
+      <li>
+        <a
+          type="button"
+          placement="left"
+          ngbTooltip="Buy now"
+          (click)="buyNow(watch)"
+        >
+          <i class="fa fa-money-bill"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="product-content">
+    <h3 class="title">
+      <a>{{ watch.brand.brandName }} {{ watch.model }}</a>
+    </h3>
+    <div class="price">${{ watch.price }}</div>
+  </div>
+</div>

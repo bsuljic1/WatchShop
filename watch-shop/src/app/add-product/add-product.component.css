@@ -1,0 +1,62 @@
+.addForm {
+  margin: auto;
+  width: 80%;
+  padding: 30px;
+  margin-top: 30px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent;
+}
+
+select,
+option {
+  cursor: pointer;
+}
+.radios {
+  cursor: pointer;
+}
+
+input[name="gridRadios"] {
+  cursor: pointer;
+}
+
+.form-check-label {
+  margin-right: 15px;
+}
+
+.first,
+.second {
+  float: left;
+}
+
+.form-group {
+  padding: 5px;
+}
+
+select {
+  border-radius: 4px;
+}
+
+.formButtons {
+  float: right;
+  text-align: right;
+}
+
+.formButtons .btn {
+  margin: 5px;
+  padding: 15px;
+  width: 150px;
+}
+
+.radios {
+  margin-left: 10px;
+}
+
+select {
+  padding-right: 30px;
+}
+
+.sel {
+  margin-left: 20px;
+  margin-right: 20px;
+}

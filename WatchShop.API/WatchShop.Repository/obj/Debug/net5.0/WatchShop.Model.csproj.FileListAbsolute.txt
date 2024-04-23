@@ -1,0 +1,15 @@
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\bin\Debug\net5.0\WatchShop.Model.deps.json
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\bin\Debug\net5.0\WatchShop.Model.runtimeconfig.json
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\bin\Debug\net5.0\WatchShop.Model.runtimeconfig.dev.json
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\bin\Debug\net5.0\WatchShop.Model.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\bin\Debug\net5.0\ref\WatchShop.Model.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\bin\Debug\net5.0\WatchShop.Model.pdb
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\obj\Debug\net5.0\WatchShop.Model.csproj.AssemblyReference.cache
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\obj\Debug\net5.0\WatchShop.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\obj\Debug\net5.0\WatchShop.Model.AssemblyInfoInputs.cache
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\obj\Debug\net5.0\WatchShop.Model.AssemblyInfo.cs
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\obj\Debug\net5.0\WatchShop.Model.csproj.CoreCompileInputs.cache
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\obj\Debug\net5.0\WatchShop.Model.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\obj\Debug\net5.0\ref\WatchShop.Model.dll
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\obj\Debug\net5.0\WatchShop.Model.pdb
+C:\Users\berina.suljic\Source\Repos\APLABFall2021\WatchShop.API\WatchShop.Repository\obj\Debug\net5.0\WatchShop.Model.genruntimeconfig.cache

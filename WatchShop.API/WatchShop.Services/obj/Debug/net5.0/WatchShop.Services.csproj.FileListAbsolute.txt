@@ -1,0 +1,15 @@
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Debug\net5.0\WatchShop.Services.deps.json
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Debug\net5.0\WatchShop.Services.dll
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Debug\net5.0\ref\WatchShop.Services.dll
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Debug\net5.0\WatchShop.Services.pdb
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Debug\net5.0\WatchShop.Services.csproj.AssemblyReference.cache
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Debug\net5.0\WatchShop.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Debug\net5.0\WatchShop.Services.AssemblyInfoInputs.cache
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Debug\net5.0\WatchShop.Services.AssemblyInfo.cs
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Debug\net5.0\WatchShop.Services.csproj.CoreCompileInputs.cache
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Debug\net5.0\WatchShop.Services.dll
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Debug\net5.0\ref\WatchShop.Services.dll
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Debug\net5.0\WatchShop.Services.pdb
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Debug\net5.0\WatchShop.Services.runtimeconfig.json
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\bin\Debug\net5.0\WatchShop.Services.runtimeconfig.dev.json
+C:\Users\berina.suljic\source\repos\APLABFall2021\WatchShop.API\WatchShop.Services\obj\Debug\net5.0\WatchShop.Services.genruntimeconfig.cache

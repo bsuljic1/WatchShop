@@ -1,0 +1,85 @@
+<div class="card">
+  <div class="row">
+    <div class="col-md-12 cart">
+      <div class="title">
+        <div class="row">
+          <div class="col">
+            <h4><b>Admin Dashboard</b></h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 title"><h6>Product details</h6></div>
+        <div class="col-md-1 title"><h6>Gender</h6></div>
+        <div class="col-md-2 title"><h6>Available</h6></div>
+        <div class="col-md-1 title"><h6>Price</h6></div>
+        <div class="col-md-2 title"><h6>Shipping Price</h6></div>
+        <div class="col-md-2 title">
+          <button
+            class="myBtn"
+            (click)="add()"
+            style="background-color: rgb(255, 248, 230)"
+          >
+            <i class="fas fa-plus"></i> Add new watch
+          </button>
+        </div>
+      </div>
+      <div
+        *ngFor="
+          let watch of watches
+            | paginate
+              : {
+                  itemsPerPage: 6,
+                  currentPage: page,
+                  totalItems: totalSize
+                }
+        "
+      >
+        <div class="row main align-items-center">
+          <div class="col-md-2 title">
+            <img
+              class="img-fluid"
+              src="{{ watch.imagePath }}"
+              style="cursor: pointer"
+              [routerLink]="['/products/productDetails', watch.watchId]"
+            />
+          </div>
+          <div
+            class="col-md-2"
+            style="cursor: pointer"
+            [routerLink]="['/products/productDetails', watch.watchId]"
+          >
+            <div class="row text-muted title">{{ watch.brand.brandName }}</div>
+            <div class="row">{{ watch.model }}</div>
+          </div>
+          <div class="col-md-1 title">
+            {{ watch.gender.genderName }}
+          </div>
+          <div class="col-md-2 title">
+            {{ watch.available }}
+          </div>
+          <div class="col-md-1 title">$ {{ watch.price }}</div>
+          <div class="col-md-2 title">$ {{ watch.shippingPrice }}</div>
+          <div class="btn-group-vertical buttons2 col-md-2">
+            <button
+              class="myBtn mb-1"
+              [routerLink]="['/editProduct', watch.watchId]"
+            >
+              <i class="far fa-edit"></i> Edit
+            </button>
+            <button
+              class="myBtn"
+              style="background-color: rgb(187, 25, 25)"
+              (click)="delete(watch)"
+            >
+              <i class="fas fa-trash"></i> Delete
+            </button>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+      <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    </div>
+  </div>
+</div>

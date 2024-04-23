@@ -1,0 +1,24 @@
+.buttons .btn{
+    width:45%;
+    padding:5px;
+    margin:5px;
+}
+.buttons{
+    padding:5px;
+}
+
+.card-header{
+    cursor:pointer;
+}
+
+.card-header h6>i{
+   float:right;
+}
+
+body{
+    font-family: "Raleway", sans-serif !important;
+}
+
+.form-check-input{
+    cursor:pointer;
+}
